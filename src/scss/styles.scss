@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./mixins";
+@import "./vars";
+@import "./navbar";
+@import "./loader";
+
+body {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@import "./mq"
