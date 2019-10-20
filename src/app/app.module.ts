@@ -6,9 +6,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 
-// import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { NoFoundModule } from './no-found/no-found.module';
 
@@ -21,7 +20,7 @@ import { NoFoundModule } from './no-found/no-found.module';
 		HttpClientModule,
 		NgbModule,
 		!environment.production ? StoreDevtoolsModule.instrument() : [],
-		CoreModule,
+		AppRoutingModule,
 		HomeModule,
 		NoFoundModule
 	],

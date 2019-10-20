@@ -36,11 +36,8 @@
     "bootstrap": "^4.3.1",
     "core-js": "^3.3.2",
     "intl": "^1.2.5",
-    "jquery": "^3.4.1",
     "moment": "^2.24.0",
-    "ngx-popper": "^7.0.0",
     "ngx-spinner": "^8.0.3",
-    "popper.js": "^1.16.0",
     "rxjs": "^6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "^0.10.2"
