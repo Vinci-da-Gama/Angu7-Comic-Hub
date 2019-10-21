@@ -14,4 +14,21 @@ body {
     margin: 0 auto;
 }
 
+.card-width {
+    width: 18rem;
+}
+
+.block-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.threelines-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
 @import "./mq"

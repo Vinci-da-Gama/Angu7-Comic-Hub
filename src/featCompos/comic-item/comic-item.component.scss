@@ -1,0 +1,11 @@
+.comic-img-mxheight {
+    height: 428px;
+}
+
+.comic-atag {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+        color: lighten($color: #000000, $amount: 26%);
+    }
+}

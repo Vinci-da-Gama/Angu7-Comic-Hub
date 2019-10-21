@@ -11,7 +11,7 @@ export class CrudService {
 		private httpCli: HttpClient
 	) { }
 
-	getAllComics() {
+	StoreAllComics() {
 		const req = new HttpRequest('GET', this.url, { reportProgress: true });
 		return this.httpCli.request(req);
 	}

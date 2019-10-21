@@ -9,7 +9,7 @@ export class Comic {
 	public pages: string;
 	public price: string;
 	public releaseDate: string;
-	public cosImgUrl: string;
+	public image: string;
 	public characters: Character[];
 
 	constructor(id: string, slug: string, name: string,
@@ -24,7 +24,7 @@ export class Comic {
 		this.pages = pages;
 		this.price = price;
 		this.releaseDate = releaseDate;
-		this.cosImgUrl = image;
+		this.image = image;
 		this.characters = characters;
 	}
 }

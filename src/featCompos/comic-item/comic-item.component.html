@@ -1,1 +1,25 @@
-<p>comic-item works!</p>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	<a
+		[routerLink]="['/comic', idx]"
+		class="comic-atag"
+		(click)="passComicById(idx)"
+	>
+		<div class="card card-width">
+			<img
+				[src]="comic.image"
+				alt="{{ comic.slug + idx }}"
+				class="card-img-top comic-img-mxheight"
+			/>
+			<div class="card-body">
+				<h5 class="card-title text-center block-ellipsis"
+					title="{{ comic.name }}"
+				>
+					{{ comic.name }}
+				</h5>
+				<p class="card-text threelines-ellipsis">
+					{{ comic.description }}
+				</p>
+			</div>
+		</div>
+	</a>
+</div>
