@@ -18,6 +18,7 @@ import { HomeModule } from './home/home.module';
 import { CharactersModule } from '../feetModules/characters/characters.module';
 
 import { reducers } from '../store/app-store/app.reducers';
+import { SingleComicServicService } from '../services/internal/singleComic/single-comic-servic.service';
 
 @NgModule({
 	declarations: [
@@ -38,7 +39,9 @@ import { reducers } from '../store/app-store/app.reducers';
 		CharactersModule,
 		NgxSpinnerModule
 	],
-	// providers: [],
+	providers: [
+		SingleComicServicService
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

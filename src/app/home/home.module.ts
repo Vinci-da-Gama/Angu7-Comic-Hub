@@ -10,13 +10,13 @@ import { ComicsReducer } from '../../store/comic-store/comic.reducer';
 import { ComicsEffects } from '../../store/comic-store/comic.effects';
 
 @NgModule({
-  declarations: [HomeCompo, ComicItemComponent],
-  imports: [
-    StoreModule.forFeature('comics', ComicsReducer),
-    EffectsModule.forFeature([ComicsEffects]),
-    CommonModule,
-    HomeRoutingModule
-  ]
+	declarations: [HomeCompo, ComicItemComponent],
+	imports: [
+		StoreModule.forFeature('comics', ComicsReducer),
+		EffectsModule.forFeature([ComicsEffects]),
+		CommonModule,
+		HomeRoutingModule
+	]
 })
 
 export class HomeModule { }
