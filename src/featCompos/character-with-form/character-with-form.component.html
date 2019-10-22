@@ -18,13 +18,13 @@
 	</div>
 	<div class="row mt-3">
 		<div
-			class="col-12 col-sm-2 col-md-3 col-lg-2"
+			class="col-12 col-md-3 col-lg-2"
 			*ngFor="let role of roles"
 		>
 			<div class="card">
 				<img
-                    [src]="role.image"
-                    alt="{{ role.name }}"
+					[src]="role.image"
+					alt="{{ role.name }}"
 					class="card-img-top img-thumbnail img-heightsame"
 				/>
 				<div class="card-body">
@@ -37,29 +37,15 @@
 					<p class="card-text threelines-ellipsis">
 						{{ role.description }}
 					</p>
-					<button class="btn btn-danger" type="button">
+					<button
+						class="btn btn-danger btn-block"
+						type="button"
+					>
 						Delete
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	<app-character-add></app-character-add>
 </div>
-
-<!-- description: "Illyana Nikolievna Rasputina (Russian: Ильяна Николаевна Распутина) was born on the Soviet collective farm called the Ust-Ordynsky Collective, near Lake Baikal, in Siberia. She was the youngest of three mutant siblings. Illyana's brothers were the X-Man Piotr (Colossus), and the cosmonaut, Mikhail Rasputin. As a child, she was saved by Piotr from a runaway tractor, just before her brother was recruited into the X-Men by "
-id: "2"
-image: "https://images-na.ssl-images-amazon.com/images/I/61enOChflWL._SY445_.jpg"
-isGood: "true"
-name: "Magik"
-numberOfRoles: "1999" -->
-
-<!-- characters: (3) [{…}, {…}, {…}]
-description: "Size does matter.  And no one knows this more than Hank Pym - a.k.a. Ant-Man. Got a problem with Galactus? Call the FF. Got a problem with, say, mind-controlled cockroaches? Then Ant-Man's your man! And needless to say, it's done a number on our diminutive hero's self-esteem.  When Ant-Man is tapped to infiltrate an international spy ring that has been siphoning secrets out of Washington, he jumps at the chance - unaware that he's being used as a pawn in a larger game of espionage."
-id: "2"
-image: "https://rukminim1.flixcart.com/image/704/704/jqo3b0w0/poster/k/4/h/medium-movmcu0502-official-ant-man-all-characters-in-ant-hole-original-imafcmhdhp4nsqan.jpeg?q=70"
-issueNumber: "2"
-name: "Ant-Man (2003) #1"
-pages: "21"
-price: "15.50"
-releaseDate: "2015-03-14T12:47:45-0400"
-slug: "Ant-Man" -->

@@ -19,6 +19,7 @@ import { CharactersModule } from '../feetModules/characters/characters.module';
 
 import { reducers } from '../store/app-store/app.reducers';
 import { SingleComicServicService } from '../services/internal/singleComic/single-comic-servic.service';
+import { BreadcrumbServiceService } from '../services/internal/breadCrumb/breadcrumb-service.service';
 
 @NgModule({
 	declarations: [
@@ -40,7 +41,8 @@ import { SingleComicServicService } from '../services/internal/singleComic/singl
 		NgxSpinnerModule
 	],
 	providers: [
-		SingleComicServicService
+		SingleComicServicService,
+		BreadcrumbServiceService
 	],
 	bootstrap: [AppComponent]
 })

@@ -14,6 +14,7 @@ import * as comicReducer from '../../../store/comic-store/comic.reducer';
 })
 export class HomeCompo implements OnInit {
 	comicsData: Comic[] = [];
+	showNxCrumb: boolean = false;
 	// comicsData: Observable<comicReducer.ComicStateInterface>;
 
 	constructor(
@@ -24,15 +25,9 @@ export class HomeCompo implements OnInit {
 	ngOnInit() {
 		this.curdService.StoreAllComics()
 			.subscribe((data: HttpResponse<Comic[]>) => {
-				console.log('27 -- data.body: ', data.body)
 				this.comicsData = data.body;
 			})
 		// this.comicsData = this.cStroe.select('comics');
-		/* this.cStroe.select('comics')
-			.subscribe((data: any) => {
-				console.log('33 -- data: ', data)
-			}) */
-		// console.log('35 -- comicsData: ', this.comicsData)
 	}
 
 }

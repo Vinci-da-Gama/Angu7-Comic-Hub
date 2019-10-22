@@ -21,14 +21,13 @@ export class ComicsEffects {
 			});
 		}),
 		map((comics) => {
-				console.log('24 -- comicsEffect: ', comics);
 				if (comics !== null) {
 					return {
 						type: cmiActions.SET_COMMICS,
 						payload: comics
 					};
 				} else {
-					console.log('31 -- no comics in database');
+					console.log('30 -- no comics in database');
 					return null;
 				}
 			}

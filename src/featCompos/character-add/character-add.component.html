@@ -1,1 +1,71 @@
-<p>character-add works!</p>
+<div class="row mt-3">
+	<form
+		novalidate
+		[formGroup]="addCharacterForm"
+		(ngSubmit)="createNewHero(addCharacterForm)"
+	>
+		<div class="form-group">
+			<label>name</label>
+			<input
+				type="text"
+				class="form-control"
+				aria-describedby="name"
+				placeholder="Enter name"
+				formControlName="acName"
+				required
+			>
+			<div *ngIf="acName.errors && (acName.dirty || acName.touched)">
+				<p
+					*ngIf="acName.errors.required"
+					class="text-danger"
+				>
+					Name is required.
+				</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Description</label>
+			<input
+				type="text"
+				class="form-control"
+				placeholder="Enter description"
+				formControlName="acDesc"
+				required
+			>
+			<div *ngIf="acDesc.errors && (acDesc.dirty || acDesc.touched)">
+				<p
+					*ngIf="acDesc.errors.required"
+					class="text-danger"
+				>
+					Description is required.
+				</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Image</label>
+			<input
+				type="text"
+				class="form-control"
+				placeholder="Enter image url"
+				formControlName="acImg"
+				required
+			>
+			<div *ngIf="acImg.errors && (acImg.dirty || acImg.touched)">
+				<!-- https://via.placeholder.com/150/ -->
+				<p
+					*ngIf="acImg.errors.required"
+					class="text-danger"
+				>
+					Image is required.
+				</p>
+			</div>
+		</div>
+		<button
+			type="submit"
+			class="btn btn-primary"
+			[disabled]="!addCharacterForm.valid"
+		>
+			Submit
+		</button>
+	</form>
+</div>

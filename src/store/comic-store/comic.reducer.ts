@@ -17,7 +17,6 @@ const initialComicsState: ComicStateInterface = {
 export function ComicsReducer(state = initialComicsState, action: cmiActions.ComicActions) {
 	switch (action.type) {
 		case (cmiActions.SET_COMMICS):
-			console.log('20 -- comics reducer: ', action.payload);
 			return {
 				...state,
 				comics: [...action.payload]
